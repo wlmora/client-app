@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'client-app';
+  title = 'Consulta y Creación de Clientes';
+  
+  constructor(private router: Router) { }
+  
+  GetClients() {
+    this.router.navigate(["getClients"]);
+  }
+  AddClient() {
+    this.router.navigate(["addClient"]);
+  }
 }

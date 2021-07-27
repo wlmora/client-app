@@ -1,0 +1,25 @@
+<div class="card">
+  <form>
+    <div class="form-group">
+      <label>Identificacion: </label>
+      <input [(ngModel)]="client.identificacion" />
+    </div>
+    <div class="form-group">
+      <label>Razon Social: </label>
+      <input [(ngModel)]="client.razonSocial" />
+    </div>
+    <div class="form-group">
+      <label>Contacto: </label>
+      <input [(ngModel)]="client.contacto" />
+    </div>
+    <div class="form-group">
+      <label>Region: </label>
+      <input [(ngModel)]="client.region" />
+    </div>
+    <div class="form-group">
+      <label>Tipo Cliente: </label>
+      <input [(ngModel)]="client.tipoCliente" />
+    </div>
+    <button (click)="Save()" class="btn btn-info">Guardar</button>
+  </form>
+</div>
